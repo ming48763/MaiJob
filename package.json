@@ -1,0 +1,14 @@
+{
+  "name": "maijob",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NuLifeMap 展示用職缺站。非正式求職服務。",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "generate": "node scripts/generate-jobs.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

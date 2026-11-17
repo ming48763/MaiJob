@@ -1,10 +1,10 @@
 # Mai Job — 給爬蟲練習用的假網站
 
-職缺與租屋都是假的。頁面長得像徵才網和租屋網，用來在本機練習爬蟲，不是求職服務，也不是租屋平台。
+職缺與租屋都是假的。頁面長得像徵才網和租屋網，用來練習爬蟲，不是求職服務，也不是租屋平台。
 
-**此為假網站，所有資訊皆為隨機產生，用來純展示爬蟲用，請勿當真。** 網站只在本機跑，沒有上線服務。
+**此為假網站，所有資訊皆為隨機產生，用來純展示爬蟲用，請勿當真。**
 
-**本機：** [http://127.0.0.1:5180](http://127.0.0.1:5180)
+**Demo：** [https://mai-job.hihimiles.com](https://mai-job.hihimiles.com/)
 
 ![Mai Job 首頁：搜尋、篩選與職缺橫列](docs/jobs.png)
 
@@ -26,7 +26,7 @@
 | 介面 | CSS、少量原生 JavaScript |
 | 資料 | 本地 JSON。職缺、租屋各 1000 筆 |
 | 結構化資料 | 職缺頁內嵌 schema.org `JobPosting`（`application/ld+json`） |
-| 部署 | 只在本機，沒有上線服務 |
+| 部署 | [https://mai-job.hihimiles.com](https://mai-job.hihimiles.com/) |
 
 ---
 
@@ -37,13 +37,15 @@ npm install
 npm start
 ```
 
-開發時用 `npm run dev`。預設是 [http://127.0.0.1:5180](http://127.0.0.1:5180)，租屋首頁是 [http://127.0.0.1:5180/home](http://127.0.0.1:5180/home)。
+開發時用 `npm run dev`。本機預設是 [http://127.0.0.1:5180](http://127.0.0.1:5180)，租屋首頁是 [http://127.0.0.1:5180/home](http://127.0.0.1:5180/home)。
 
-職缺範例：
+上線網址：
 
-- http://127.0.0.1:5180/job/demo0001
-- http://127.0.0.1:5180/job/demo0002
-- http://127.0.0.1:5180/job/demo0003
+- https://mai-job.hihimiles.com/
+- https://mai-job.hihimiles.com/home
+- https://mai-job.hihimiles.com/job/demo0001
+- https://mai-job.hihimiles.com/job/demo0002
+- https://mai-job.hihimiles.com/job/demo0003
 
 `npm run generate` 會用舊的 120 筆職缺覆寫 `data/jobs.json`。現在這 1000 筆不要用那個指令重產。
 
